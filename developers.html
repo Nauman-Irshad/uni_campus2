@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uni-Campus</title>
+  
+  <link rel="stylesheet" href="toa.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f2f2;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-section img {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      margin-right: 12px;
+      border: 2px solid white;
+      box-shadow: 0 0 6px #00ffcc;
+    }
+
+    .logo-section h1 {
+      font-size: 20px;
+      color: #00ffcc;
+      text-shadow: 1px 1px 2px black;
+      margin-right: 10px;
+    }
+
+  
+
+    .nav-buttons {
+      display: flex;
+      gap: 14px;
+    }
+
+    .nav-buttons a {
+      background: #00ffcc;
+      color: #000;
+      padding: 8px 14px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 255, 204, 0.4);
+    }
+
+    .nav-buttons a:hover {
+      background: #ff9900;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ff9900;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-buttons {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        gap: 10px;
+      }
+    }
+
+    .folder {
+      background-color: #fff;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .folder h2 {
+      text-align: center;
+      color: #2c5364;
+      margin-bottom: 20px;
+    }
+
+    .developer-card {
+      display: flex;
+      align-items: center;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 16px;
+    }
+
+    .developer-card img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+      border: 2px solid #00ffcc;
+    }
+
+    .developer-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .developer-info p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    input, button {
+      padding: 8px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    #teamList {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-section">
+      <img src="logo.png" alt="Logo" />
+      <h1>Uni-Campus</h1>
+      <h2 class="tagline">__Every Lecture, Link, In One Place__</h2>
+    </div>
+    <div class="nav-buttons">
+             <a href="index.html">Past Papers Notes</a>
+     <a href="index.html">Past Papers links</a>
+      <a href="developers.html" target="_blank">Developer</a>
+    </div>
+  </header>
+
+  <div class="folder">
+    <h2>Development Team</h2>
+
+    <!-- ✅ MANUAL DEVELOPERS (Edit as needed) -->
+    <div class="developer-card">
+      <img src="../images/me1.PNG" alt="Nauman">
+      <div class="developer-info">
+        <h3>Nauman Irshad Ali Shah (Software Engineer)</h3>
+         <h6>Gmail : naumanirshadalishah@gmail.com</h6>
+         <h6>Contact : +923334388037</h6>
+        <p>Lead Developer – Backend & Automation</p>
+      </div>
+    </div>
+  <div class="developer-card">
+      <img src="../images/ali.jpeg" alt="Nauman">
+      <div class="developer-info">
+        <h3>Ali Ahmad (Software Engineer)</h3>
+           <h6>Gmail : aliahmadev61@gmail.com</h6>
+         <h6>Contact : +92046161128</h6>
+        <p>Full Stack Web-Developer</p>
+      </div>
+    </div>
+  <footer>
+    <p>&copy;Uni-Campus</p>
+  </footer>
+
+
+    <!-- Optional: Dynamic list -->
+
+
+
+</body>
+</html>
